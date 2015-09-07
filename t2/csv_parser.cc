@@ -34,7 +34,9 @@ float getAccuracy()
 };
 
 float getAverageAccuracy()
-{};
+{
+
+};
 
 float getRecall()
 {
@@ -45,9 +47,9 @@ float getRecall()
 
 float getPrecision()
 {
-	float acc=0;
+	float precision=0;
 
-	return acc;
+	return precision;
 };
 
 float getFScore()
