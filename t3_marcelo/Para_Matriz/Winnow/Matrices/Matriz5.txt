@@ -1,6 +1,6 @@
-45	9	
-73	6	
-Accuracy: 40.6015%, Correctas: 54, Incorrectas: 79, total:133
-Preccision: 38.1356%
-Recall: 88.2353%
-F-Score: 53.2544%
+36	21	
+61	15	
+Accuracy: 42.8571%, Correctas: 57, Incorrectas: 76, total:133
+Preccision: 37.1134%
+Recall: 70.5882%
+F-Score: 48.6486%

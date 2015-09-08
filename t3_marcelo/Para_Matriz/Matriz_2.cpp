@@ -11,22 +11,27 @@ vector <int> v_salida;
 vector <int> v_entrenamiento;
 
 int matriz [2][2];
-
+	float Preccision_T=0.0;
+	float Recall_T=0.0;
+	float FScore_T=0.0;
+	float Accuracy_T=0.0;
+	int TotalCorrectas=0;
+	int TotalIncorrectas=0;
 
 int main (){
-
+	ofstream curva_roc("MaxEntL1/Matrices/curva_roc.txt");
 	for(int a=1;a<11;a++){
 	string linea;
 	string nombre_entrenamiento;
 	string nombre_modelo;
 
-	nombre_entrenamiento="Winnow/archivo";
+	nombre_entrenamiento="MaxEntL1/archivo";
 	nombre_entrenamiento+=to_string(a);
 	nombre_entrenamiento+=".txt";
 
-	nombre_modelo="Winnow/output";
+	nombre_modelo="MaxEntL1/output";
 	nombre_modelo+=to_string(a);
-	nombre_modelo+="_Winnow.txt";
+	nombre_modelo+="_MaxEntL1.txt";
 
 
 
@@ -46,7 +51,7 @@ int main (){
 			mi_salida >> basura1;
 			mi_salida >> negativo;
 
-			cout << "positivo: " << positivo << "negativo:" << negativo << endl;
+			//cout << "positivo: " << positivo << "negativo:" << negativo << endl;
 			if(negativo>positivo){
 				v_salida.push_back(-1);
 				//cout << "ingreso negativo" << endl;
@@ -113,7 +118,7 @@ int main (){
 		//cout << "chao" << endl;
 	}
 	
-	string archivo_salida="Winnow/Matrices/Matriz";
+	string archivo_salida="MaxEntL1/Matrices/Matriz";
 	archivo_salida+=to_string(a);
 	archivo_salida+=".txt";
 
@@ -147,7 +152,24 @@ int main (){
 	as << "F-Score: " << FScore<< "%"  << endl;
 	v_salida.clear();
 	v_entrenamiento.clear();
+
+
+	Accuracy_T+=((matriz00+matriz01)/tamano);
+	Preccision_T+=Preccision;
+	FScore_T+=FScore;
+	Recall_T+=Recall;
+	TotalCorrectas+=matriz[0][1]+matriz[0][0];
+	TotalIncorrectas+=matriz[1][1]+matriz[1][0];
+
+	curva_roc <<  (matriz11/(matriz11+matriz01)) << " " << (matriz00/(matriz00+matriz10))  << endl;
 }
+
+	string resultado_promedio="MaxEntL1/Matrices/RP.txt";
+	ofstream resul(resultado_promedio);
+	resul << "Accuracy Promedio: " << Accuracy_T/10 << ", Correctas: " << TotalCorrectas << ", Incorrectas:" << TotalIncorrectas << endl;
+	resul << "Preccision Promedio: " << Preccision_T/10 << endl;
+	resul << "Recall Promedio: " << Recall_T/10 << endl;
+	resul << "F-Score Promedio: " << FScore_T/10 << endl;  
 	return 0;
 	
 }
