@@ -13,14 +13,17 @@ def worker(x):
 
     importer = '.bin/mallet import-svmlight --input archivo%s.txt --output training%s.mallet' % (x,x)
     print importer
+    subprocess.call([importer])
 
     classifiers = ['Bayes', 'DecisionTree', 'BalancedWinnow', 'MaxEntL1','MaxEnt', 'BalancedWinnow', 'Winnow']
     for j in range(len(classifiers)):
         trainer= '.bin/mallet train-classifier --input training%s.mallet --output-classifier output%s_%s.classifier --trainer %s' % (x,x,classifiers[j],classifiers[j])
         print trainer
+        subprocess.call([trainer])
         classify = '.bin/mallet classify-file --input archivo%s.txt --output output%s.txt --classfier output%s_%s.classifier' % (x,x,x,classifiers[j])
         print classify
-    time.sleep(2)
+        subprocess.call([classify])
+    #time.sleep(2)
     logging.debug('Deteniendo')
     return
 
