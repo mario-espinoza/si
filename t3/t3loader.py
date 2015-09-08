@@ -18,7 +18,7 @@ def worker(x):
         trainer= 'bin/mallet train-classifier --input training%s.mallet --output-classifier output%s_%s.classifier --trainer %s' % (x,x,classifiers[j],classifiers[j])
         print trainer
         os.system(trainer)
-        classify = 'bin/mallet classify-file --input archivo%s.txt --output output%s.txt --classifier output%s_%s.classifier' % (x,x,x,classifiers[j])
+        classify = 'bin/mallet classify-file --input archivo%s.txt --output output%s_%s.txt --classifier output%s_%s.classifier' % (x,x,classifiers[j],x,classifiers[j])
         print classify
         os.system(classify)
 
