@@ -1,0 +1,6 @@
+52	35	
+23	23	
+Accuracy: 65.4135%, Correctas: 87, Incorrectas: 46, total:133
+Preccision: 69.3333%
+Recall: 69.3333%
+F-Score: 69.3333%

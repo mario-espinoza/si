@@ -1,0 +1,6 @@
+47	27	
+24	35	
+Accuracy: 55.6391%, Correctas: 74, Incorrectas: 59, total:133
+Preccision: 66.1972%
+Recall: 57.3171%
+F-Score: 61.4379%

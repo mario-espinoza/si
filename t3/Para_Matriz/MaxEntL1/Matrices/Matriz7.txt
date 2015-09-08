@@ -1,0 +1,6 @@
+80	11	
+22	20	
+Accuracy: 68.4211%, Correctas: 91, Incorrectas: 42, total:133
+Preccision: 78.4314%
+Recall: 80%
+F-Score: 79.2079%

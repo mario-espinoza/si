@@ -1,0 +1,6 @@
+45	24	
+55	9	
+Accuracy: 51.8797%, Correctas: 69, Incorrectas: 64, total:133
+Preccision: 45%
+Recall: 83.3333%
+F-Score: 58.4416%

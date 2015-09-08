@@ -1,0 +1,6 @@
+54	34	
+24	21	
+Accuracy: 66.1654%, Correctas: 88, Incorrectas: 45, total:133
+Preccision: 69.2308%
+Recall: 72%
+F-Score: 70.5882%

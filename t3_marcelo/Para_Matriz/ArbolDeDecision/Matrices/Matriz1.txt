@@ -1,0 +1,6 @@
+55	16	
+42	20	
+Accuracy: 53.3835%, Correctas: 71, Incorrectas: 62, total:133
+Preccision: 56.701%
+Recall: 73.3333%
+F-Score: 63.9535%

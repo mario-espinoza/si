@@ -1,0 +1,6 @@
+55	18	
+33	27	
+Accuracy: 54.8872%, Correctas: 73, Incorrectas: 60, total:133
+Preccision: 62.5%
+Recall: 67.0732%
+F-Score: 64.7059%

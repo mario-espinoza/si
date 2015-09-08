@@ -1,0 +1,6 @@
+56	18	
+15	44	
+Accuracy: 55.6391%, Correctas: 74, Incorrectas: 59, total:133
+Preccision: 78.8732%
+Recall: 56%
+F-Score: 65.4971%

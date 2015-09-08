@@ -1,0 +1,6 @@
+84	6	
+18	32	
+Accuracy: 64.2857%, Correctas: 90, Incorrectas: 50, total:140
+Preccision: 82.3529%
+Recall: 72.4138%
+F-Score: 77.0642%

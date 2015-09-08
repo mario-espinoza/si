@@ -1,0 +1,6 @@
+74	14	
+18	27	
+Accuracy: 66.1654%, Correctas: 88, Incorrectas: 45, total:133
+Preccision: 80.4348%
+Recall: 73.2673%
+F-Score: 76.6839%

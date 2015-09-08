@@ -1,0 +1,6 @@
+40	40	
+39	14	
+Accuracy: 60.1504%, Correctas: 80, Incorrectas: 53, total:133
+Preccision: 50.6329%
+Recall: 74.0741%
+F-Score: 60.1504%

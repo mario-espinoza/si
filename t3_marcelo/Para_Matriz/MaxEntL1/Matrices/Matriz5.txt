@@ -1,0 +1,6 @@
+29	33	
+49	22	
+Accuracy: 46.6165%, Correctas: 62, Incorrectas: 71, total:133
+Preccision: 37.1795%
+Recall: 56.8627%
+F-Score: 44.9612%
