@@ -1,4 +1,4 @@
-Mallet
+Utilizando Mallet - Mario Espinoza y Marcelo Baeza
 ======
 
 MALLET is a Java-based package for statistical natural language processing, document classification, clustering, topic modeling, information extraction, and other machine learning applications to text.
