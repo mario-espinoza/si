@@ -1,0 +1,6 @@
+74	12	
+21	26	
+Accuracy: 64.6617%, Correctas: 86, Incorrectas: 47, total:133
+Preccision: 77.8947%
+Recall: 74%
+F-Score: 75.8974%
