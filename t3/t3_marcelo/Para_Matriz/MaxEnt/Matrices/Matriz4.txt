@@ -1,0 +1,6 @@
+41	32	
+47	13	
+Accuracy: 54.8872%, Correctas: 73, Incorrectas: 60, total:133
+Preccision: 46.5909%
+Recall: 75.9259%
+F-Score: 57.7465%

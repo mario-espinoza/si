@@ -1,0 +1,6 @@
+49	38	
+20	26	
+Accuracy: 65.4135%, Correctas: 87, Incorrectas: 46, total:133
+Preccision: 71.0145%
+Recall: 65.3333%
+F-Score: 68.0555%

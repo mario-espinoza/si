@@ -1,0 +1,6 @@
+42	34	
+45	12	
+Accuracy: 57.1429%, Correctas: 76, Incorrectas: 57, total:133
+Preccision: 48.2759%
+Recall: 77.7778%
+F-Score: 59.5745%
