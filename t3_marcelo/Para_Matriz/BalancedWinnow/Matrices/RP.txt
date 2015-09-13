@@ -1,4 +1,0 @@
-Accuracy Promedio: 0.609662, Correctas: 816, Incorrectas:521
-Preccision Promedio: 65.2256
-Recall Promedio: 79.7964
-F-Score Promedio: 70.7262
