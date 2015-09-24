@@ -9,9 +9,24 @@ typedef struct node{
 
 typedef struct cluster{
 }
+
 //minkowski(h = 3, 4 y 5)
-float minkowskiDistance()
-{
+template <typename fp_type> fp_type minkowskiDistance(const fp_type & p, const std::vector<fp_type> & ds) {
+    // ds contains d[i] = v[i] - w[i] for two vectors v and w
+    fp_type ex = 0.0;
+    fp_type min_d = std::numeric_limits<fp_type>::infinity();
+    fp_type max_d = -std::numeric_limits<fp_type>::infinity();
+    for (int i = 0 ; i < ds.size() ; ++i) {
+        fp_type d = std::fabs(ds[i]);
+        ex += std::pow(d, p);
+        min_d = std::min(min_d, d);
+        max_d = std::max(max_d, d);
+    }
+
+    return std::isnan(ex) ? ex
+         : !std::isnormal(ex) && std::signbit(p) ? min_d
+         : !std::isnormal(ex) && !std::signbit(p) ? max_d
+         : std::pow(ex, 1.0/p);
 }
 
 //euclideana
