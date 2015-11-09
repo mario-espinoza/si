@@ -1,0 +1,15 @@
+XXFLAGS =	-O2 -g -std=c++11 -Wall -fmessage-length=0
+
+OBJS =		t4.o
+
+LIBS =
+
+TARGET =	t4
+
+$(TARGET):	$(OBJS)
+	$(CXX) -o $(TARGET) $(OBJS) $(LIBS)
+
+all:	$(TARGET)
+
+clean:
+	rm -f $(OBJS) $(TARGET) *.csv

@@ -3,72 +3,52 @@
 
 using namespace std;
 
-typedef struct node{
-
-}
-
-typedef struct cluster{
-}
-
 //minkowski(h = 3, 4 y 5)
 template <typename fp_type> fp_type minkowskiDistance(const fp_type & p, const std::vector<fp_type> & ds) {
     // ds contains d[i] = v[i] - w[i] for two vectors v and w
-    fp_type ex = 0.0;
-    fp_type min_d = std::numeric_limits<fp_type>::infinity();
-    fp_type max_d = -std::numeric_limits<fp_type>::infinity();
-    for (int i = 0 ; i < ds.size() ; ++i) {
-        fp_type d = std::fabs(ds[i]);
-        ex += std::pow(d, p);
-        min_d = std::min(min_d, d);
-        max_d = std::max(max_d, d);
-    }
 
-    return std::isnan(ex) ? ex
-         : !std::isnormal(ex) && std::signbit(p) ? min_d
-         : !std::isnormal(ex) && !std::signbit(p) ? max_d
-         : std::pow(ex, 1.0/p);
 }
 
 //euclideana
-float euclideanDistance(node a, node b)
+double euclideanDistance(vector<int> a,vector<int>b)
 {
 
 }
 
 //Manhattan
-float manhattanDistance()
+double manhattanDistance()
 {
 
 }
 
 //Euclideana cuadrada
-float euclideanSquaredDistance()
+double euclideanSquaredDistance()
 {
 
 }
 
 
 //Chebychev
-float chebychevDistance()
+double chebychevDistance()
 {
 
 }
 
 
 //Canberra
-float canberraDistance()
+double canberraDistance()
 {
 
 }
 
 //Cord al cuadrado
-float cordSquaredDistance()
+double cordSquaredDistance()
 {
 
 }
 
 //Chi-squared al cuadrado.
-float chiSquaredDistance()
+double chiSquaredDistance()
 {
 
 }
@@ -81,7 +61,7 @@ double purity()
 double getEntropy(double probCatA, double ProbCatB)
 {
     double entropy;
-    entropy =
+    entropy = -(probCatA)*log
 }
 
 double precision()
@@ -89,7 +69,7 @@ double precision()
 
 double getAccuracy()
 {
-    double = accuracy;
+    double accuracy;
     int correctCases,testCases;
 
     accuracy = correctCases/testCases;
@@ -97,7 +77,11 @@ double getAccuracy()
 }
 
 double recall()
-{}
+{
+    double recall;
+
+    int
+}
 
 //F1-Score
 double f1score(){
@@ -105,7 +89,9 @@ double f1score(){
 }
 
 void randIndex()
-{}
+{
+
+}
 
 double variance()
 {}
